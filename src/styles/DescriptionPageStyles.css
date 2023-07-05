@@ -1,0 +1,34 @@
+.description {
+    background-image: linear-gradient(to bottom, #648C85, #F2EEE9, #F2B6B6);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.description__image {
+    width: 100%;
+    height: 100vh;
+    filter: blur(2px);
+}
+
+.description__p1 {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 300px;
+    text-align: center;
+    font-size: 21px;
+    text-shadow: 1px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000;
+    color: white;
+}
+
+.description__p2 {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 600px;
+    text-align: center;
+    font-size: 21px;
+    text-shadow: 1px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000;
+    color: white;
+}

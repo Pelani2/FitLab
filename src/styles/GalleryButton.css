@@ -1,0 +1,17 @@
+.gallery-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #F6DCE0;
+    color: #333;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 150px;
+}
+
+.gallery-button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #5F75B7;
+}

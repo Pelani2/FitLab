@@ -1,0 +1,16 @@
+.footer__media-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 20px auto;
+}
+
+.footer__media-icons > img {
+    width: 30px;
+}
+
+.footer__media-icons > img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

@@ -1,0 +1,9 @@
+.footer-links {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #E0E4F5;
+}

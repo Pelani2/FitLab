@@ -1,0 +1,23 @@
+.section-one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+.section-one__title {
+    color: #B6C7FF;
+    font-size: 70px;
+    width: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.section-one__desc {
+    width: 500px;
+    padding: 30px;
+    font-size: 20px;
+    color: #B6C7FF;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
