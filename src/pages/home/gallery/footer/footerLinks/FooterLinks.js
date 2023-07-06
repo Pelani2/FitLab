@@ -1,20 +1,29 @@
 import React from "react";
 import "../../../../../styles/FooterLinksStyles.css";
+import { Link } from "react-router-dom";
 
 export default function FooterLinks() {
     return(
         <ul className="footer-links" >
             <li>
-                Need Help?
+                <Link to="/needhelppage" >
+                    Need Help?
+                </Link>
             </li>
             <li>
-                Content Guide
+                <Link>
+                    Content Guide
+                </Link>
             </li>
             <li>
-                Terms of Use
+                <Link>
+                    Terms of Use
+                </Link>
             </li>
             <li>
-                Jobs
+                <Link>
+                    Jobs
+                </Link>
             </li>
         </ul>
     );
