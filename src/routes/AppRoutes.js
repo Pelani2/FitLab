@@ -8,6 +8,7 @@ import AboutPage from "../pages/aboutPage/AboutPage";
 import ContactPage from "../pages/contactPage/ContactPage";
 import InfoPage from "../pages/infoPage/InfoPage";
 import NeedHelpPage from "../pages/needHelpPage/NeedHelpPage";
+import ContentGuidePage from "../pages/contentGuidePage/ContentGuidePage";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/needhelppage",
         element: <NeedHelpPage />
+    },
+    {
+        path: "/contentguidepage",
+        element: <ContentGuidePage />
     }
 ]);
 

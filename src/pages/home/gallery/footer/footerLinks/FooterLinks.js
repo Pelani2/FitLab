@@ -11,7 +11,7 @@ export default function FooterLinks() {
                 </Link>
             </li>
             <li>
-                <Link>
+                <Link to="/contentguidepage" >
                     Content Guide
                 </Link>
             </li>
