@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/NeedHelpPageStyles.css";
 
 export default function NeedHelpPage() {
+    const [email, setEmail] = useState("");
+    const [isEmailValid, setIsEmailValid] = useState(true);
+
+    const validateEmail = (email) => {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    };
+
+    const handleEmailChange = (e) => {
+        const enteredEmail = e.target.value;
+        setEmail(enteredEmail);
+        setIsEmailValid(validateEmail(enteredEmail));
+    };
+
     return(
         <div>
             <div className="need-help__container" >
@@ -33,6 +47,9 @@ export default function NeedHelpPage() {
                         id="email"
                         name="email"
                         placeholder="Your Email..."
+                        value={email}
+                        onChange={handleEmailChange}
+                        className={!isEmailValid ? "invalid-email" : ""}
                     />
 
                     <label htmlFor="message" >

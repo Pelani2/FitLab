@@ -56,3 +56,8 @@
 .need-help__contact-form button:hover {
     background-color: #2962ff;
 }
+
+.invalid-email {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
