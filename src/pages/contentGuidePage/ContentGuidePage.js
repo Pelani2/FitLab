@@ -21,7 +21,7 @@ export default function ContentGuidePage() {
                     <div className="color-item">
                         <div className="color-sample" style={{background: "#6AC8FF"}} >
                             <p>
-                                #6AC8FF
+                                Sky Blue
                             </p>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ export default function ContentGuidePage() {
                     <div className="color-item">
                         <div className="color-sample" style={{background: "#336BFF"}} >
                             <p>
-                                #336BFF
+                                Royal Blue
                             </p>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ export default function ContentGuidePage() {
                     <div className="color-item">
                         <div className="color-sample" style={{background: "#1C2331"}} >
                             <p>
-                                #1C2331
+                                Midnight Black
                             </p>
                         </div>
                     </div>
