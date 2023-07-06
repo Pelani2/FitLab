@@ -6,6 +6,7 @@ import LogInPage from "../pages/LogInPage/LogInPage";
 import SignUpPage from "../pages/SignUpPage/SignUpPage";
 import AboutPage from "../pages/aboutPage/AboutPage";
 import ContactPage from "../pages/contactPage/ContactPage";
+import InfoPage from "../pages/infoPage/InfoPage";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/contactpage",
         element: <ContactPage />
+    },
+    {
+        path: "/infopage",
+        element: <InfoPage />
     }
 ]);
 
