@@ -7,7 +7,7 @@ export default function TermsOfUsePage() {
             <h1>
                 Terms of Use
             </h1>
-            <p>
+            <p className="terms-of-use___readit" >
                 Welcome to our Website, please read terms of use carefully.
             </p>
             <div className="terms-of-use__content" >
