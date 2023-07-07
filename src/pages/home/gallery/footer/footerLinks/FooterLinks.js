@@ -21,7 +21,7 @@ export default function FooterLinks() {
                 </Link>
             </li>
             <li>
-                <Link>
+                <Link to="/jobspage" >
                     Jobs
                 </Link>
             </li>

@@ -5,7 +5,7 @@ export default function ApplyNowButton({
     text
 }) {
     return(
-        <button>
+        <button className="apply-now__button" >
             {text}
         </button>
     );
