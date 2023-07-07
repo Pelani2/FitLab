@@ -18,7 +18,7 @@ export default function JobsPage() {
                     Island FitLab. The ideal candidate should have experience in guiding
                     and motivating clients to achieve their fitness goals.
                 </p>
-                <Link>
+                <Link to="/applynowpage" >
                     <ApplyNowButton text="Apply Now" />
                 </Link>
             </div>
@@ -32,7 +32,7 @@ export default function JobsPage() {
                     instructor. Experience in leading various group fitness classes such
                     as Zumba, Yoga, or HIIT is preferred.
                 </p>
-                <Link>
+                <Link to="/applynowpage" >
                     <ApplyNowButton text="Apply Now" />
                 </Link>
             </div>
@@ -46,7 +46,7 @@ export default function JobsPage() {
                     provide exceptional customer service at Island FitLab. Responsibilities
                     include greeting members, scheduling appointments, and handling inquiries.
                 </p>
-                <Link>
+                <Link to="/applynowpage" >
                     <ApplyNowButton text="Apply Now" />
                 </Link>
             </div>
