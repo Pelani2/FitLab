@@ -10,6 +10,7 @@ import InfoPage from "../pages/infoPage/InfoPage";
 import NeedHelpPage from "../pages/needHelpPage/NeedHelpPage";
 import ContentGuidePage from "../pages/contentGuidePage/ContentGuidePage";
 import TermsOfUsePage from "../pages/termsOfUsePage/TermsOfUsePage";
+import JobsPage from "../pages/jobsPage/JobsPage";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -51,6 +52,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/termsofusepage",
         element: <TermsOfUsePage />
+    },
+    {
+        path: "/jobspage",
+        element: <JobsPage />
     }
 ]);
 
