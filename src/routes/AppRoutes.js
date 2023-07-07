@@ -9,6 +9,7 @@ import ContactPage from "../pages/contactPage/ContactPage";
 import InfoPage from "../pages/infoPage/InfoPage";
 import NeedHelpPage from "../pages/needHelpPage/NeedHelpPage";
 import ContentGuidePage from "../pages/contentGuidePage/ContentGuidePage";
+import TermsOfUsePage from "../pages/termsOfUsePage/TermsOfUsePage";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/contentguidepage",
         element: <ContentGuidePage />
+    },
+    {
+        path: "/termsofusepage",
+        element: <TermsOfUsePage />
     }
 ]);
 

@@ -16,7 +16,7 @@ export default function FooterLinks() {
                 </Link>
             </li>
             <li>
-                <Link>
+                <Link to="/termsofusepage" >
                     Terms of Use
                 </Link>
             </li>
