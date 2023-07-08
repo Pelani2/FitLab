@@ -61,7 +61,7 @@ export default function PersonalTrainingPage() {
             <button
                 onClick={generateTraining}
                 className="generate-button"
-                disabled={buttonClicked}
+
             >
                 Generate Your Training
             </button>
