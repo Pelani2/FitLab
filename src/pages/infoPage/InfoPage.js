@@ -22,32 +22,44 @@ export default function InfoPage() {
                 </h3>
                 <ul>
                     <li>
-                        <Link>
+                        <Link 
+                            to="/personaltrainingpage"
+                        >
                             Personal Training
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link
+                            to="/groupfitnesspage"
+                        >
                             Group Fitness Classes
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link
+                            to="/strengthandconditioningpage"
+                        >
                             Strength and Conditioning
                         </Link>  
                     </li>
                     <li>
-                        <Link>
+                        <Link
+                            to="/cardiovasculartrainingpage"
+                        >
                             Cardiovascular Training
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link
+                            to="/yogapilatespage"
+                        >
                             Yoga and Pilates
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link
+                            to="/nutritioncounselingpage"
+                        >
                             Nutrition Counseling
                         </Link>
                     </li>

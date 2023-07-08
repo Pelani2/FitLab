@@ -12,6 +12,7 @@ import ContentGuidePage from "../pages/contentGuidePage/ContentGuidePage";
 import TermsOfUsePage from "../pages/termsOfUsePage/TermsOfUsePage";
 import JobsPage from "../pages/jobsPage/JobsPage";
 import ApplyNowPage from "../pages/applyNowPage/ApplyNowPage";
+import PersonalTrainingPage from "../pages/personalTrainingPage/PersonalTrainingPage";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -61,6 +62,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/applynowpage",
         element: <ApplyNowPage />
+    },
+    {
+        path: "/personaltrainingpage",
+        element: <PersonalTrainingPage />
     }
 ]);
 
