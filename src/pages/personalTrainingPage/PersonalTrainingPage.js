@@ -14,7 +14,7 @@ export default function PersonalTrainingPage() {
         const trainings = [
             {
                 name: "Strength & Conditioning",
-                description: "Build strenth and improve overall conditioning through variety of exercises and techniques",
+                description: "Build strength and improve overall conditioning through variety of exercises and techniques",
                 duration: "60 minutes",
                 intensity: "High",
                 image: StrengthTraining,
@@ -57,11 +57,11 @@ export default function PersonalTrainingPage() {
     };
 
     return(
-        <div>
+        <div className="training__container" >
             <button
                 onClick={generateTraining}
                 className="generate-button"
-
+                disabled={buttonClicked}
             >
                 Generate Your Training
             </button>
@@ -82,6 +82,7 @@ export default function PersonalTrainingPage() {
                     <img 
                         alt="training"
                         src={trainingName.image}
+                        className="training__image"
                     />
                 </div>
             )}

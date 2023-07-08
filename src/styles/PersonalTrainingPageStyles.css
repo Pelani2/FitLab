@@ -1,0 +1,48 @@
+.training__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.generate-button {
+    background-color: #00c6ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.training__info {
+    text-align: center;
+}
+
+.training__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.training__description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.training__duration,
+.training__intensity {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.training__image {
+    width: 300px;
+    height: auto;
+    border: 4px;
+}
