@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/ApplyNowPageStyles.css";
 
 export default function ApplyNowPage() {
     const [name, setName] = useState("");
@@ -33,13 +34,13 @@ export default function ApplyNowPage() {
     };
 
     return(
-        <div>
-            <h1>
+        <div className="apply__background" >
+            <h1 className="apply__title" >
                 Job Application
             </h1>
-            {message && <p>{message}</p>}
-            <form onSubmit={handleSubmit} >
-                <div>
+            {message && <p className="apply__message" >{message}</p>}
+            <form onSubmit={handleSubmit} className="apply__form" >
+                <div className="apply__form-parts" >
                     <label htmlFor="name" >
                         Name: 
                     </label>
@@ -52,7 +53,7 @@ export default function ApplyNowPage() {
                     />
                 </div>
 
-                <div>
+                <div className="apply__form-parts">
                     <label htmlFor="email" >
                         Email: 
                     </label>
@@ -65,7 +66,7 @@ export default function ApplyNowPage() {
                     />
                 </div>
 
-                <div>
+                <div className="apply__form-parts">
                     <label htmlFor="phone" >
                         Phone: 
                     </label>
@@ -78,7 +79,7 @@ export default function ApplyNowPage() {
                     />
                 </div>
 
-                <div>
+                <div className="apply__form-parts">
                     <label htmlFor="resume" >
                         Resume:
                     </label>
@@ -91,7 +92,7 @@ export default function ApplyNowPage() {
                     />
                 </div>
 
-                <div>
+                <div className="apply__form-parts">
                     <label htmlFor="coverLetter" >
                         Cover Letter:
                     </label>
@@ -103,7 +104,7 @@ export default function ApplyNowPage() {
                         required
                     />
                 </div>
-                <button type="submit" >
+                <button type="submit" className="apply__submit-button" >
                     Submit Application
                 </button>
             </form>
