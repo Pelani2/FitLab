@@ -1,14 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/GroupFitnessClassesStyles.css";
 
 export default function GroupFitnessClasses() {
+    const [selectedClass, setSelectedClass] = useState("");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+
+    const handleClassSelection = (event) => {
+        setSelectedClass(event.target.value);
+    }
+
+    const handleNameChange = (event) => {
+        setName(event.target.value);
+    }
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    }
+
+    const handlePhoneChange = (event) => {
+        setPhone(event.target.value);
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("Form Submitted");
+        setSelectedClass("");
+        setName("");
+        setEmail("");
+        setPhone("");
+    }
 
     return(
         <div>
             <h1>
                 Group Fitness Classes
             </h1>
-            <form>
+            <form onSubmit={handleSubmit} >
                 <div>
                     <label htmlFor="classSelection" >
                         Select a class:
@@ -16,20 +45,22 @@ export default function GroupFitnessClasses() {
                     <select
                         id="classSelection"
                         required
+                        value={selectedClass}
+                        onChange={handleClassSelection}
                     >
-                        <option>
+                        <option value="" >
                             Select a class
                         </option>
-                        <option>
+                        <option value="Cardio Kickboxing" >
                             Cardio Kickboxing
                         </option>
-                        <option>
+                        <option value="Yoga Flow" >
                             Yoga Flow
                         </option>
-                        <option>
+                        <option value="HIIT Circuit" >
                             HIIT Circuit
                         </option>
-                        <option>
+                        <option value="Strength and Conditioning" >
                             Strength and Conditioning
                         </option>
                     </select>
@@ -42,6 +73,8 @@ export default function GroupFitnessClasses() {
                         type="text"
                         id="name"
                         required
+                        value={name}
+                        onChange={handleNameChange}
                     />
                 </div>
                 <div>
@@ -52,6 +85,8 @@ export default function GroupFitnessClasses() {
                         type="email"
                         id="email"
                         required
+                        value={email}
+                        onChange={handleEmailChange}
                     />
                 </div>
                 <div>
@@ -62,6 +97,8 @@ export default function GroupFitnessClasses() {
                         type="tel"
                         id="phone"
                         required
+                        value={phone}
+                        onChange={handlePhoneChange}
                     />
                 </div>
                 <button type="submit" >
