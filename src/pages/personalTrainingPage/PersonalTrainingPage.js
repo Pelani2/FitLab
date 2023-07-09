@@ -156,7 +156,10 @@ export default function PersonalTrainingPage() {
                                         {trainingName.exercises.exercise5}
                                     </p>
                                 </div>
-                                <button onClick={closePopup} >
+                                <button 
+                                    onClick={closePopup} 
+                                    className="close-button"
+                                >
                                     Close 
                                 </button>
                             </div>
