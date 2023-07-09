@@ -37,7 +37,9 @@ export default function GroupFitnessClasses() {
             <h1 className="group-fitness__title" >
                 Group Fitness Classes
             </h1>
-            <form onSubmit={handleSubmit} className="group-fitness__form-container" >
+            <form 
+                onSubmit={handleSubmit} className="group-fitness__form-container" 
+            >
                 <div className="form-container__form-group" >
                     <label 
                         htmlFor="classSelection"             className="form-group__label" 
@@ -115,7 +117,11 @@ export default function GroupFitnessClasses() {
                         onChange={handlePhoneChange}className="form-group__input"
                     />
                 </div>
-                <button type="submit" >
+                <button 
+                    type="submit"
+                    className="form-group__submit-button"
+                >
+
                     Book Class
                 </button>
             </form>

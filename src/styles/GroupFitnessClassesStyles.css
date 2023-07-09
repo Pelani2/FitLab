@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.group-fitness__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #777777;
+    height: 100vh;
+}
+
+.group-fitness__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.group-fitness__form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+}
+
+.form-container__form-group {
+    margin-bottom: 15px;
+}
+
+.form-group__label {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-group__input {
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.form-group__submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group__submit-button:hover {
+    background-color: #555555;
+}
