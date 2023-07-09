@@ -9,6 +9,15 @@ import KickboxingCardioTraining from "../../assets/images/cardio kickboxing.jpg"
 export default function PersonalTrainingPage() {
     const [trainingName, setTrainingName] = useState("");
     const [buttonClicked, setButtonClicked] = useState(false);
+    const [popupVisible, setPopupVisible] = useState(false);
+
+    const openPopup = () => {
+        setPopupVisible(true);
+    };
+
+    const closePopup = () => {
+        setPopupVisible(false);
+    };
 
     const generateTraining = () => {
         const trainings = [
@@ -18,6 +27,13 @@ export default function PersonalTrainingPage() {
                 duration: "60 minutes",
                 intensity: "High",
                 image: StrengthTraining,
+                exercises: {
+                    exercise1: "Squats", 
+                    exercise2: "Bench Press",
+                    exercise3: "Deadlifts",
+                    exercise4: "Shoulder Press",
+                    exercise5: "Pull-Ups"
+                }
             },
             {
                 name: "HIIT Circuit",
@@ -25,6 +41,13 @@ export default function PersonalTrainingPage() {
                 duration: "45 minutes",
                 intensity: "Very high",
                 image: HIITTraining,
+                exercises: {
+                    exercise1: "Burpees", 
+                    exercise2: "Mountain Climber",
+                    exercise3: "Jump Squats",
+                    exercise4: "High Knees",
+                    exercise5: "Plank Jacks"
+                }
             },
             {
                 name: "Yoga Flow & Flexibility Class",
@@ -32,6 +55,13 @@ export default function PersonalTrainingPage() {
                 duration: "60 minutes",
                 intensity: "Moderate",
                 image: YogaTraining,
+                exercises: {
+                    exercise1: "Sun Salutations", 
+                    exercise2: "Warrior Pose",
+                    exercise3: "Triangle Pose",
+                    exercise4: "Forward Folds",
+                    exercise5: "Pigeon Pose"
+                }
             },
             {
                 name: "Core Power Pilates",
@@ -39,6 +69,13 @@ export default function PersonalTrainingPage() {
                 duration: "45 minutes",
                 intensity: "Moderate",
                 image: PilatesTraining,
+                exercises: {
+                    exercise1: "Hundred", 
+                    exercise2: "Roll-Up",
+                    exercise3: "Single-leg Strength",
+                    exercise4: "Plank",
+                    exercise5: "Teaser"
+                }
             },
             {
                 name: "Cardio Kickboxing Workout",
@@ -46,6 +83,13 @@ export default function PersonalTrainingPage() {
                 duration: "60 minutes",
                 intensity: "High",
                 image: KickboxingCardioTraining,
+                exercises: {
+                    exercise1: "Jab-Cross", 
+                    exercise2: "Front Kicks",
+                    exercise3: "Hooks",
+                    exercise4: "Roundhouse Kicks",
+                    exercise5: "Jumping Jacks"
+                }
             },
         ];
 
@@ -61,7 +105,7 @@ export default function PersonalTrainingPage() {
             <button
                 onClick={generateTraining}
                 className="generate-button"
-
+                disabled={buttonClicked}
             >
                 Generate Your Training
             </button>
@@ -79,11 +123,45 @@ export default function PersonalTrainingPage() {
                     <p className="training__intensity">
                         Intensity: {trainingName.intensity}
                     </p>
-                    <img 
-                        alt="training"
-                        src={trainingName.image}
-                        className="training__image"
-                    />
+                    <a 
+                        href="#" 
+                        onClick={openPopup} 
+                    >
+                        <img 
+                            alt="training"
+                            src={trainingName.image}
+                            className="training__image"
+                        />
+                    </a>
+                    {popupVisible && (
+                        <div className="popup__container" >
+                            <div className="popup__content" >
+                                <div className="popup__workout" >
+                                    <h1 className="workout__title" >
+                                        Workout
+                                    </h1>
+                                    <p className="workout__exercise" >
+                                        {trainingName.exercises.exercise1}
+                                    </p>
+                                    <p className="workout__exercise" >
+                                        {trainingName.exercises.exercise2}
+                                    </p>
+                                    <p className="workout__exercise" >
+                                        {trainingName.exercises.exercise3}
+                                    </p>
+                                    <p className="workout__exercise" >
+                                        {trainingName.exercises.exercise4}
+                                    </p>
+                                    <p className="workout__exercise" >
+                                        {trainingName.exercises.exercise5}
+                                    </p>
+                                </div>
+                                <button onClick={closePopup} >
+                                    Close 
+                                </button>
+                            </div>
+                        </div>
+                    )}
                 </div>
             )}
         </div>
