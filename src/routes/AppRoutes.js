@@ -13,6 +13,7 @@ import TermsOfUsePage from "../pages/termsOfUsePage/TermsOfUsePage";
 import JobsPage from "../pages/jobsPage/JobsPage";
 import ApplyNowPage from "../pages/applyNowPage/ApplyNowPage";
 import PersonalTrainingPage from "../pages/personalTrainingPage/PersonalTrainingPage";
+import GroupFitnessClasses from "../pages/groupFitnessClasses/GroupFitnessClasses";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -66,6 +67,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/personaltrainingpage",
         element: <PersonalTrainingPage />
+    },
+    {
+        path: "/groupfitnesspage",
+        element: <GroupFitnessClasses />
     }
 ]);
 
