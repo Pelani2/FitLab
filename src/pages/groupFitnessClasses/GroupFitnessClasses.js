@@ -33,13 +33,15 @@ export default function GroupFitnessClasses() {
     }
 
     return(
-        <div>
-            <h1>
+        <div className="group-fitness__container" >
+            <h1 className="group-fitness__title" >
                 Group Fitness Classes
             </h1>
-            <form onSubmit={handleSubmit} >
-                <div>
-                    <label htmlFor="classSelection" >
+            <form onSubmit={handleSubmit} className="group-fitness__form-container" >
+                <div className="form-container__form-group" >
+                    <label 
+                        htmlFor="classSelection"             className="form-group__label" 
+                    >
                         Select a class:
                     </label>
                     <select
@@ -47,6 +49,7 @@ export default function GroupFitnessClasses() {
                         required
                         value={selectedClass}
                         onChange={handleClassSelection}
+                        className="form-group__input"
                     >
                         <option value="" >
                             Select a class
@@ -65,8 +68,11 @@ export default function GroupFitnessClasses() {
                         </option>
                     </select>
                 </div>
-                <div>
-                    <label htmlFor="name" >
+                <div className="form-container__form-group">
+                    <label 
+                        htmlFor="name" 
+                        className="form-group__label"
+                    >
                         Name:
                     </label>
                     <input 
@@ -75,10 +81,14 @@ export default function GroupFitnessClasses() {
                         required
                         value={name}
                         onChange={handleNameChange}
+                        className="form-group__input"
                     />
                 </div>
-                <div>
-                    <label htmlFor="email" >
+                <div className="form-container__form-group">
+                    <label 
+                        htmlFor="email" 
+                        className="form-group__label"
+                    >
                         Email:
                     </label>
                     <input 
@@ -87,10 +97,14 @@ export default function GroupFitnessClasses() {
                         required
                         value={email}
                         onChange={handleEmailChange}
+                        className="form-group__input"
                     />
                 </div>
-                <div>
-                    <label htmlFor="phone" >
+                <div className="form-container__form-group">
+                    <label 
+                        htmlFor="phone" 
+                        className="form-group__label"
+                    >
                         Phone:
                     </label>
                     <input 
@@ -98,7 +112,7 @@ export default function GroupFitnessClasses() {
                         id="phone"
                         required
                         value={phone}
-                        onChange={handlePhoneChange}
+                        onChange={handlePhoneChange}className="form-group__input"
                     />
                 </div>
                 <button type="submit" >
