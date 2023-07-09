@@ -5,6 +5,7 @@ import HIITTraining from "../../assets/images/HIIT.jpg";
 import YogaTraining from "../../assets/images/yoga flow.jpg";
 import PilatesTraining from "../../assets/images/core power pilates.jpg";
 import KickboxingCardioTraining from "../../assets/images/cardio kickboxing.jpg";
+import CloseButton from "../../components/buttons/closeButton/CloseButton";
 
 export default function PersonalTrainingPage() {
     const [trainingName, setTrainingName] = useState("");
@@ -105,7 +106,6 @@ export default function PersonalTrainingPage() {
             <button
                 onClick={generateTraining}
                 className="generate-button"
-                disabled={buttonClicked}
             >
                 Generate Your Training
             </button>
@@ -155,13 +155,12 @@ export default function PersonalTrainingPage() {
                                     <p className="workout__exercise" >
                                         {trainingName.exercises.exercise5}
                                     </p>
+                                    
                                 </div>
-                                <button 
-                                    onClick={closePopup} 
-                                    className="close-button"
-                                >
-                                    Close 
-                                </button>
+                                <CloseButton 
+                                    closeFunc={closePopup}
+                                    text="Close"
+                                />
                             </div>
                         </div>
                     )}
