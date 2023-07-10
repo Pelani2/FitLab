@@ -3,12 +3,12 @@ import "../../styles/StrengthAndConditioningPage.css";
 
 export default function StrengthAndConditioningPage() {
     return(
-        <div>
-            <section>
+        <div className="strength__container" >
+            <section className="strength__section">
                 <h2>
                     Most popular exercises
                 </h2>
-                <ul>
+                <ul className="strength__info">
                     <li>
                         Compound Movements
                     </li>
@@ -27,14 +27,14 @@ export default function StrengthAndConditioningPage() {
                 </ul>
             </section>
 
-            <section>
+            <section className="strength__section">
                 <h2>
                     Benefits
                 </h2>
                 <p>
                     Strength and conditioning training offers numerous benefits for individuals seeking to improve their fitnesss and overall performance. Some of the key benefits include:
                 </p>
-                <ul>
+                <ul className="strength__info">
                     <li>
                         Increased strength and power
                     </li>
@@ -56,14 +56,14 @@ export default function StrengthAndConditioningPage() {
                 </ul>
             </section>
 
-            <section>
+            <section className="strength__section">
                 <h2>
                     Best cases for choose this trainig
                 </h2>
                 <p>
                     Strength and conditioning training is particularly beneficial in the following cases:
                 </p>
-                <ul>
+                <ul className="strength__info">
                     <li>
                         Athletes aiming to enhance their sports performance.
                     </li>
