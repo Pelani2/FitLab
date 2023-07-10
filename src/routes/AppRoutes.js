@@ -14,6 +14,7 @@ import JobsPage from "../pages/jobsPage/JobsPage";
 import ApplyNowPage from "../pages/applyNowPage/ApplyNowPage";
 import PersonalTrainingPage from "../pages/personalTrainingPage/PersonalTrainingPage";
 import GroupFitnessClasses from "../pages/groupFitnessClasses/GroupFitnessClasses";
+import StrengthAndConditioningPage from "../pages/strengthAndConditioning/StrengthAndConditioningPage";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -71,6 +72,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/groupfitnesspage",
         element: <GroupFitnessClasses />
+    },
+    {
+        path: "/strengthandconditioningpage",
+        element: <StrengthAndConditioningPage />
     }
 ]);
 

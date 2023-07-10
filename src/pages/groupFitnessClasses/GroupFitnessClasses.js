@@ -121,7 +121,6 @@ export default function GroupFitnessClasses() {
                     type="submit"
                     className="form-group__submit-button"
                 >
-
                     Book Class
                 </button>
             </form>
