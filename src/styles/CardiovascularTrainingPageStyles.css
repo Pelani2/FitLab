@@ -46,4 +46,52 @@ ul.cardiovascular-section__details {
 
 .cardiovascular-section__details li {
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.cardiovascular-section__details li:hover {
+    transform: scale(1.1);
+}
+
+.cardiovascular-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 90%;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cardiovascular-popup__content {
+    text-align: center;
+}
+
+.cardiovascular-popup h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cardiovascular-popup p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cardiovascular-popup button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3 ease;
+}
+
+.cardiovascular-popup button:hover {
+    background-color: #555;
 }

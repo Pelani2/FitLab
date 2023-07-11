@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/CardiovascularTrainingPageStyles.css";
 
 export default function CardiovascularTrainingPage() {
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const handleItemClick = (item) => {
+        setSelectedItem(item);
+    }
+
+    const handlePopupClose = () => {
+        setSelectedItem(null);
+    }
+
     return(
         <div className="cardiovascular-container" >
             <h1 className="cardiovascular-title" >
@@ -37,11 +47,11 @@ export default function CardiovascularTrainingPage() {
                     benefits for both physical and mental well-being. Some of the key benefits include:
                 </p>
                 <ul className="cardiovascular-section__details">
-                    <li>
+                    <li onClick={() => handleItemClick("Improved cardiovascular health")} >
                         Improved Cardiovascular Health
                     </li>
                     <li>
-                        Increased stanima and endurance
+                        Increased stamina and endurance
                     </li>
                     <li>
                         Weight loss managment
@@ -84,11 +94,26 @@ export default function CardiovascularTrainingPage() {
                     </li>
                 </ul>
                 <p>
-                    It's important to choose activities that you enjoy and that suit your
-                    fitness level and preferences. Remember to start gradually and
-                    gradually increase the intensity and duration of your workouts.
+                    It's important to choose activities that you enjoy and that suit your fitness level and preferences. Remember to start gradually and gradually increase the intensity and duration of your workouts.
                 </p>
             </div>
+            {selectedItem && (
+                <div className="cardiovascular-popup" >
+                    <div className="cardiovascular-popup__content" >
+                        <h3>
+                            {selectedItem}
+                        </h3>
+                        {selectedItem === "Improved cardiovascular health" && (
+                            <p>
+                                Cardio info
+                            </p>
+                        )}
+                        <button onClick={handlePopupClose}>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
