@@ -15,6 +15,7 @@ import ApplyNowPage from "../pages/applyNowPage/ApplyNowPage";
 import PersonalTrainingPage from "../pages/personalTrainingPage/PersonalTrainingPage";
 import GroupFitnessClasses from "../pages/groupFitnessClasses/GroupFitnessClasses";
 import StrengthAndConditioningPage from "../pages/strengthAndConditioning/StrengthAndConditioningPage";
+import CardiovascularTrainingPage from "../pages/cardiovascularTrainingPage/CardiovascularTrainingPage";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -76,6 +77,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/strengthandconditioningpage",
         element: <StrengthAndConditioningPage />
+    },
+    {
+        path: "/cardiovasculartrainingpage",
+        element: <CardiovascularTrainingPage />
     }
 ]);
 

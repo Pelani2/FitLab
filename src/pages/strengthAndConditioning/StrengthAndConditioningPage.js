@@ -58,7 +58,7 @@ export default function StrengthAndConditioningPage() {
 
             <section className="strength__section">
                 <h2>
-                    Best cases for choose this trainig
+                    Best cases for choosing this training
                 </h2>
                 <p>
                     Strength and conditioning training is particularly beneficial in the following cases:
