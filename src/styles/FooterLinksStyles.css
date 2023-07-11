@@ -7,7 +7,12 @@
 }
 
 .footer-links > li > a {
+    color: #fff;
     text-decoration: none;
-    color: #E0E4F5;
-    font-size: 20px;
+    font-size: 14px;
+    transition: color 0.3 ease;
+}
+
+.footer-links > li > a:hover {
+    color: #aaa;
 }

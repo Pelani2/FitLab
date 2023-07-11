@@ -8,9 +8,9 @@ export default function Footer() {
 
     return(
         <footer className="footer" >
-            <MediaIcons />
-            <FooterLinks />
-            <p className="copyright" >
+            <MediaIcons className="footer__media-icons" />
+            <FooterLinks className="footer__links" />
+            <p className="footer__copyright" >
                 &copy; {currentYear} Island FitLab. All rights reserved.
             </p>
         </footer>
