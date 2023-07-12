@@ -46,11 +46,11 @@ ul.cardiovascular-section__details {
 
 .cardiovascular-section__details li {
     margin-bottom: 5px;
-    cursor: pointer;
 }
 
 .cardiovascular-section__details li:hover {
-    transform: scale(1.1);
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .cardiovascular-popup {

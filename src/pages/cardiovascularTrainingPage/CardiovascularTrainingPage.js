@@ -50,16 +50,16 @@ export default function CardiovascularTrainingPage() {
                     <li onClick={() => handleItemClick("Improved cardiovascular health")} >
                         Improved Cardiovascular Health
                     </li>
-                    <li>
+                    <li onClick={() => handleItemClick("Increased stamina and endurance")} >
                         Increased stamina and endurance
                     </li>
-                    <li>
+                    <li onClick={() => handleItemClick("Weight loss managment")} >
                         Weight loss managment
                     </li>
-                    <li>
+                    <li onClick={() => handleItemClick("Reduced risk of chronic diseases")} >
                         Reduced risk of chronic diseases
                     </li>
-                    <li>
+                    <li onClick={() => handleItemClick("Enhanced mood and reduced stress")} >
                         Enhanced mood and reduced stress
                     </li>
                 </ul>
@@ -106,6 +106,26 @@ export default function CardiovascularTrainingPage() {
                         {selectedItem === "Improved cardiovascular health" && (
                             <p>
                                 Cardio info
+                            </p>
+                        )}
+                        {selectedItem === "Increased stamina and endurance" && (
+                            <p>
+                                Stamina
+                            </p>
+                        )}
+                        {selectedItem === "Weight loss managment" && (
+                            <p>
+                                Weight loss
+                            </p>
+                        )}
+                        {selectedItem === "Reduced risk of chronic diseases" && (
+                            <p>
+                                Reduced risk
+                            </p>
+                        )}
+                        {selectedItem === "Enhanced mood and reduced stress" && (
+                            <p>
+                                Enhanced mood
                             </p>
                         )}
                         <button onClick={handlePopupClose}>
