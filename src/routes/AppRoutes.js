@@ -16,6 +16,7 @@ import PersonalTrainingPage from "../pages/personalTrainingPage/PersonalTraining
 import GroupFitnessClasses from "../pages/groupFitnessClasses/GroupFitnessClasses";
 import StrengthAndConditioningPage from "../pages/strengthAndConditioning/StrengthAndConditioningPage";
 import CardiovascularTrainingPage from "../pages/cardiovascularTrainingPage/CardiovascularTrainingPage";
+import YogaAndPilates from "../pages/yogaAndPilates/YogaAndPilates";
 
 const AppRoutes = createBrowserRouter([
     {
@@ -81,6 +82,10 @@ const AppRoutes = createBrowserRouter([
     {
         path: "/cardiovasculartrainingpage",
         element: <CardiovascularTrainingPage />
+    },
+    {
+        path: "/yogapilatespage",
+        element: <YogaAndPilates />
     }
 ]);
 
