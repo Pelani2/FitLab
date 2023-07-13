@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/CardiovascularTrainingPageStyles.css";
+import YouTubeVideo from "../../videos/YouTubeVideo";
 
 export default function CardiovascularTrainingPage() {
     const [selectedItem, setSelectedItem] = useState(null);
@@ -139,6 +140,36 @@ export default function CardiovascularTrainingPage() {
 
                                 Relaxation techniques: Practices like deep breathing exercises, meditation, yoga, and mindfulness can help calm the mind, reduce stress hormones, and promote a sense of relaxation.
                             </p>
+                        )}
+                        {selectedItem === "Running or jogging" && (
+                            <YouTubeVideo 
+                                url="https://www.youtube.com/watch?v=N9C88z3g0Es"
+                            />
+                        )}
+                        {selectedItem === "Swimming" && (
+                            <YouTubeVideo 
+                                url="https://www.youtube.com/watch?v=AfnwseOgxE0"
+                            />
+                        )}
+                        {selectedItem === "Cycling" && (
+                            <YouTubeVideo 
+                                url="https://www.youtube.com/watch?v=cA1U68Wiil4"
+                            />
+                        )}
+                        {selectedItem === "Brisk walking" && (
+                            <YouTubeVideo 
+                                url="https://www.youtube.com/watch?v=BENQ9RtSbm8"
+                            />
+                        )}
+                        {selectedItem === "Aerobic dance classes" && (
+                            <YouTubeVideo 
+                                url="https://www.youtube.com/watch?v=rh4_HoVpiCY"
+                            />
+                        )}
+                        {selectedItem === "HIIT" && (
+                            <YouTubeVideo 
+                                url="https://www.youtube.com/watch?v=dNJ2gG-Jud4"
+                            />
                         )}
                         <button onClick={handlePopupClose}>
                             Close

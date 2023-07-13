@@ -1,0 +1,13 @@
+.player-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(135deg, #ffffff 0%, #dddddd 100%);
+    padding: 2px;
+}
+
+.react-player {
+    margin-bottom: 10px;
+}
