@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import "../../styles/YogaAndPilatesStyles.css";
 
 export default function YogaAndPilates() {
     const yogaTrainers = [
@@ -8,6 +9,16 @@ export default function YogaAndPilates() {
         "Elena Brower",
         "Tara Stiles"
     ]
+
+    const [selectedTrainer, setSelectedTrainer] = useState(null);
+
+    const handleTrainerClick = (trainer) => {
+        setSelectedTrainer(trainer);
+    }
+
+    const closePopup = () => {
+        setSelectedTrainer(null);
+    }
 
     return(
         <div className="yoga__container" >
@@ -43,10 +54,33 @@ export default function YogaAndPilates() {
                 </h3>
                 <ul className="section__list">
                     {yogaTrainers.map((trainer, index) => (
-                        <li key={index} className="list__item"> {trainer} </li>
+                        <li 
+                            key={index} 
+                            className="list__item"
+                            onClick={() => handleTrainerClick(trainer)}
+                        > {trainer} </li>
                     ))}
                 </ul>
             </div>
+
+            {selectedTrainer && (
+                <div className="trainer-info__container" >
+                    <div className="trainer-info__content" >
+                        <h3 className="trainer-info__title" >
+                            {selectedTrainer}
+                        </h3>
+                        <p>
+                            This is popup content for {selectedTrainer}
+                        </p>
+                        <button 
+                            className="trainer-info__close"
+                            onClick={closePopup}
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
