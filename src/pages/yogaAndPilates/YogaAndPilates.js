@@ -95,10 +95,10 @@ export default function YogaAndPilates() {
                         <h3 className="trainer-info__title" >
                             {selectedTrainer.name}
                         </h3>
-                        <p>
+                        <p className="trainer-info__info" >
                             {selectedTrainer.info}
                         </p>
-                        <div>
+                        <div className="trainer-info__alignment-div">
                             <img 
                                 src={selectedTrainer.image}
                                 alt="trainer"
