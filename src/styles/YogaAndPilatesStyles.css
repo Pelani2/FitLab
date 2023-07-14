@@ -33,3 +33,44 @@
     color: #dddddd;
     margin-bottom: 6px;
 }
+
+.trainer-info__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.trainer-info__content {
+    max-width: 500px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.trainer-info__title {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.trainer-info__info {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.trainer-info__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}

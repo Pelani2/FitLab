@@ -5,6 +5,7 @@ import KinoMacGregor  from "../../assets/images/yogaTrainers/kino-macgregor.jpg"
 import SriSri from "../../assets/images/yogaTrainers/sri-sri.jpg";
 import ElenaBrower from "../../assets/images/yogaTrainers/elena-brower.jpg";
 import TaraStiles from "../../assets/images/yogaTrainers/tara stiles.jpg";
+import CloseButton from "../../components/buttons/closeButton/CloseButton.js";
 
 export default function YogaAndPilates() {
     const yogaTrainers = [
@@ -97,17 +98,17 @@ export default function YogaAndPilates() {
                         <p>
                             {selectedTrainer.info}
                         </p>
-                        <img 
-                            src={selectedTrainer.image}
-                            alt="trainer"
-                            className="trainer-info__image"
-                        />
-                        <button 
-                            className="trainer-info__close"
-                            onClick={closePopup}
-                        >
-                            Close
-                        </button>
+                        <div>
+                            <img 
+                                src={selectedTrainer.image}
+                                alt="trainer"
+                                className="trainer-info__image"
+                            />
+                            <CloseButton 
+                                text="Close"
+                                closeFunc={closePopup}
+                            />
+                        </div>
                     </div>
                 </div>
             )}
