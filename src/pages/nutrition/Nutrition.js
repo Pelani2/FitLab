@@ -16,7 +16,16 @@ export default function Nutrition() {
         "Support for managing medical conditions through diet",
         "Weight management and body composition improvement",
         "Enhanced sports performance through tailored nutrition plans",
-        "Improved overall health and well-being"
+        "Improved overall health and well-being",
+    ];
+
+    const expectations = [
+        "Review of your medical history, current diet, and lifestyle",
+        "Detailed assessment of your nutritional needs",
+        "Setting realistic goals and developing an action plan",
+        "Monitoring progress and making necessary adjustments",
+        "Evidence-based advice and practical tips for healthy eating",
+        "Support, motivation, and accountability throughout the process"
     ];
 
     return(
@@ -51,12 +60,11 @@ export default function Nutrition() {
           During a nutrition counseling session, you can expect the following:
         </p>
         <ul>
-          <li>Review of your medical history, current diet, and lifestyle</li>
-          <li>Detailed assessment of your nutritional needs</li>
-          <li>Setting realistic goals and developing an action plan</li>
-          <li>Monitoring progress and making necessary adjustments</li>
-          <li>Evidence-based advice and practical tips for healthy eating</li>
-          <li>Support, motivation, and accountability throughout the process</li>
+          {expectations.map(expectation => (
+            <li key={expectation}>
+                {expectation}
+            </li>
+          ))}
         </ul>
   
         <h2>Is Nutrition Counseling Right for You?</h2>
