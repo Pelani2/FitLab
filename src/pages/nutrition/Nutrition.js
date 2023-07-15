@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "../../styles/NutritionStyles.css";
 import CloseButton from "../../components/buttons/closeButton/CloseButton";
+import JohnSmith from "../../assets/images/nutritionists/john-smith.jpg";
+import MichaelBrown from "../../assets/images/nutritionists/john-smith.jpg";
+import JaneJohnson from "../../assets/images/nutritionists/jane-johnson.jpg";
+import SarahDavis from "../../assets/images/nutritionists/sarah-davis.jpg";
+import AmyThompson from "../../assets/images/nutritionists/amy-thompson.jpg"
 
 export default function Nutrition() {
     const [selectedNutritionist, setSelectedNutritionist] = useState(null);
@@ -16,11 +21,31 @@ export default function Nutrition() {
     }
 
     const nutritionists = [
-        "John Smith, RD",
-        "Jane Johnson, MS, CNS",
-        "Michael Brown, RDN",
-        "Sarah Davis, CDE",
-        "Amy Thompson, LD"
+        {
+            name: "John Smith, PD",
+            image: JohnSmith, 
+            info: "John Smith is a registered dietitian with expertise in helping individuals achieve their health goals through personalized nutrition plans. With over 10 years of experience, John specializes in weight management, cardiovascular health, and sports nutrition. He believes in a holistic approach to nutrition and focuses on educating his clients about making sustainable lifestyle changes.",
+        },
+        {
+            name: "Michael Brown, RDN",
+            image: MichaelBrown, 
+            info: "Michael Brown is a registered dietitian and nutritionist who specializes in sports nutrition and performance. He has worked with professional athletes, helping them achieve peak performance through customized nutrition strategies. Michael is dedicated to maximizing athletic potential, enhancing recovery, and preventing injuries through optimized nutrient intake and hydration protocols."
+        },
+        {
+            name: "Jane Johnson, MS, CNS",
+            image: JaneJohnson,
+            info: "Jane Johnson is a certified nutrition specialist with a Master's degree in Nutrition. Her passion lies in helping people optimize their well-being through proper nutrition. Jane has a deep understanding of the relationship between food and health conditions such as diabetes, gastrointestinal disorders, and autoimmune diseases. She empowers her clients to make informed food choices and develop personalized meal plans tailored to their unique needs."
+        },
+        {
+            name: "Sarah Davis, CDE",
+            image: SarahDavis,
+            info: "Sarah Davis is a certified diabetes educator and nutritionist. She has a comprehensive understanding of diabetes management and offers guidance on maintaining stable blood sugar levels, meal planning, and lifestyle modifications. Sarah works closely with individuals with diabetes to help them develop healthy eating habits, incorporate physical activity, and optimize their overall well-being.",
+        },
+        {
+            name: "Amy Thompson, LD",
+            image: AmyThompson,
+            info: "Sarah Davis is a certified diabetes educator and nutritionist. She has a comprehensive understanding of diabetes management and offers guidance on maintaining stable blood sugar levels, meal planning, and lifestyle modifications. Sarah works closely with individuals with diabetes to help them develop healthy eating habits, incorporate physical activity, and optimize their overall well-being.",
+        }
     ];
 
     const benefitsOfNutrition = [
@@ -110,16 +135,13 @@ export default function Nutrition() {
                     If you're looking for exceptional nutrition counseling services, consider consulting with one of these highly recommended nutritionists at Island Fitlab:
                 </p>
                 <ul className="nutirition__list ">
-                    {nutritionists.map(nutritionist => (
-                        <li 
-                            key={nutritionist} 
-                            className="
-                                nutrition__list-item 
-                                nutritionists
-                            "
-                            onClick={() => handleNutritionistClick(nutritionist)}
+                    {nutritionists.map((nutritionist, index) => (
+                        <li
+                            key={index}
+                            className="nutrition__list-item nutritionists"
+                            onClick={() => handleNutritionistClick(nutritionist.name)}
                         >
-                            {nutritionist}
+                            {nutritionist.name}
                         </li>
                     ))}
                 </ul>
