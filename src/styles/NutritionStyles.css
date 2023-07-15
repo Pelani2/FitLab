@@ -74,3 +74,17 @@
 .nutrition__popup-div p {
     margin-bottom: 20px;
 }
+
+.nutritionist__image {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.nutritionist__div-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

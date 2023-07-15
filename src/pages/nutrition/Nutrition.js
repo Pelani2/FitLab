@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../styles/NutritionStyles.css";
 import CloseButton from "../../components/buttons/closeButton/CloseButton";
 import JohnSmith from "../../assets/images/nutritionists/john-smith.jpg";
-import MichaelBrown from "../../assets/images/nutritionists/john-smith.jpg";
+import MichaelBrown from "../../assets/images/nutritionists/michael-brown.jpg";
 import JaneJohnson from "../../assets/images/nutritionists/jane-johnson.jpg";
 import SarahDavis from "../../assets/images/nutritionists/sarah-davis.jpg";
 import AmyThompson from "../../assets/images/nutritionists/amy-thompson.jpg"
@@ -158,10 +158,17 @@ export default function Nutrition() {
                         <p>
                             {nutritionists.find(nutritionist => nutritionist.name === selectedNutritionist)?.info}
                         </p>
-                        <CloseButton 
-                            text="Close"
-                            closeFunc={closePopup}
-                        />
+                            <div className="nutritionist__div-flex">
+                                <img 
+                                    src={nutritionists.find(nutritionist => nutritionist.name === selectedNutritionist)?.image}
+                                    alt="nutritionistimage"
+                                    className="nutritionist__image"
+                                />
+                                <CloseButton 
+                                    text="Close"
+                                    closeFunc={closePopup}
+                                />
+                            </div>
                         </div>
                     </div>
                 )}
