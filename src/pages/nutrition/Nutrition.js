@@ -155,6 +155,9 @@ export default function Nutrition() {
                         <h3>
                             {selectedNutritionist}
                         </h3>
+                        <p>
+                            {nutritionists.find(nutritionist => nutritionist.name === selectedNutritionist)?.info}
+                        </p>
                         <CloseButton 
                             text="Close"
                             closeFunc={closePopup}
@@ -164,6 +167,5 @@ export default function Nutrition() {
                 )}
             </div>
         </div>
-
     );
 }
