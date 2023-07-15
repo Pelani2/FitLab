@@ -1,0 +1,38 @@
+.nutrition__background {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.nutrition {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nutrition__title {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.nutrition__desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.nutirition__list {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.nutrition__list-item {
+    margin-bottom: 5px;
+    color: #cccccc;
+}
