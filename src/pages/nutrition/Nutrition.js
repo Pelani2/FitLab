@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/NutritionStyles.css";
+import CloseButton from "../../components/buttons/closeButton/CloseButton";
 
 export default function Nutrition() {
+    const [selectedNutritionist, setSelectedNutritionist] = useState(null);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+    const handleNutritionistClick = (nutritionist) => {
+        setSelectedNutritionist(nutritionist);
+        setIsPopupOpen(true);
+    }
+
+    const closePopup = () => {
+        setIsPopupOpen(false);
+    }
+
     const nutritionists = [
         "John Smith, RD",
         "Jane Johnson, MS, CNS",
@@ -96,11 +109,15 @@ export default function Nutrition() {
                 <p className="nutrition__desc">
                     If you're looking for exceptional nutrition counseling services, consider consulting with one of these highly recommended nutritionists at Island Fitlab:
                 </p>
-                <ul className="nutirition__list">
+                <ul className="nutirition__list ">
                     {nutritionists.map(nutritionist => (
                         <li 
                             key={nutritionist} 
-                            className="nutrition__list-item"
+                            className="
+                                nutrition__list-item 
+                                nutritionists
+                            "
+                            onClick={() => handleNutritionistClick(nutritionist)}
                         >
                             {nutritionist}
                         </li>
@@ -109,6 +126,20 @@ export default function Nutrition() {
                 <p className="nutrition__desc">
                     These nutritionists have a wealth of experience and expertise in providing personalized nutrition counseling to help you reach your health and wellness goals.
                 </p>
+
+                {isPopupOpen && selectedNutritionist && (
+                    <div className="nutrition__popup-container">
+                        <div className="nutrition__popup-div">
+                        <h3>
+                            {selectedNutritionist}
+                        </h3>
+                        <CloseButton 
+                            text="Close"
+                            closeFunc={closePopup}
+                        />
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
 
