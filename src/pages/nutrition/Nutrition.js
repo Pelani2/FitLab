@@ -44,7 +44,7 @@ export default function Nutrition() {
         {
             name: "Amy Thompson, LD",
             image: AmyThompson,
-            info: "Sarah Davis is a certified diabetes educator and nutritionist. She has a comprehensive understanding of diabetes management and offers guidance on maintaining stable blood sugar levels, meal planning, and lifestyle modifications. Sarah works closely with individuals with diabetes to help them develop healthy eating habits, incorporate physical activity, and optimize their overall well-being.",
+            info: "Amy Thompson is a licensed dietitian known for her expertise in plant-based nutrition and sustainable eating. She advocates for a whole-food, plant-centered approach to improve health and reduce the environmental impact of food choices. Amy guides her clients in transitioning to a plant-based diet swhile ensuring they meet their nutritional needs. She believes that eating for health and sustainability can go hand in hand.",
         }
     ];
 
@@ -73,9 +73,7 @@ export default function Nutrition() {
                     Nutrition Counseling
                 </h1>
                 <p className="nutrition__desc">
-                    Welcome to the Nutrition Counseling page! Here you'll find information
-                    and guidance on achieving a balanced and healthy diet through
-                    personalized counseling sessions.
+                    Welcome to the Nutrition Counseling page! Here you'll find information and guidance on achieving a balanced and health diet through personalized counseling sessions.
                 </p>
     
                 <h2 className="nutrition__title">

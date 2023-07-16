@@ -65,6 +65,8 @@
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     color: #fff;
+    width: 500px;
+    max-width: 500px;
 }
 
 .nutrition__popup-div h3 {
@@ -87,4 +89,5 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
 }
